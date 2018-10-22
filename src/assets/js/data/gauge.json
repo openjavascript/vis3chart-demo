@@ -1,0 +1,13 @@
+{
+    "series": [
+        {
+            "type": "gauge",
+            "data": [
+                {
+                    "value": 200,
+                    "total": 1345667
+                }
+            ]
+        }
+    ]
+}
