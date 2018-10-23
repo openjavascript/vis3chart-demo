@@ -12,12 +12,7 @@ import svgDountBigAll from './data-3d/svg/dount-big-all.txt';
 import svgDountIn from './data-3d/svg/dount-in.txt';
 import svgDountBig from './data-3d/svg/dount-big.txt';
 
-//import fontjson from './data-3d/fonts/gentilis_regular.typeface.json';
-import fontjson from './data-3d/fonts/droid/droid_serif_regular.typeface.json';
-
-window.fontjson = fontjson;
-
-//console.log( 'svnDountBigAll', svgDountBigAll );
+import * as dat from 'dat.gui';
 
 let background = [
     { 
@@ -50,6 +45,27 @@ let background = [
 
 let font = new fontfaceobserver( 'HuXiaoBoKuHei' );
 font.load().then(function () {
+
+    let config = {
+        scene: {
+            position: { x: 0, y: 0, z: 0 }
+        }
+        , camera: {
+            position: { x: 0, y: 0, z: 0 }
+        }
+    }
+
+    let gui = new dat.GUI();
+    let scene = gui.addFolder( 'scene position' );
+        scene.add( config.scene.position, 'x' );
+        scene.add( config.scene.position, 'y' );
+        scene.add( config.scene.position, 'z' );
+
+    let camera = gui.addFolder( 'camera position' );
+        camera.add( config.camera.position, 'x' );
+        camera.add( config.camera.position, 'y' );
+        camera.add( config.camera.position, 'z' );
+
 
     //let data = require( './data/dount.json' );
     let data = require( './data/dount-tight4.json' );
