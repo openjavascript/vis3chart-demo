@@ -42,7 +42,7 @@ let background = [
         , "offsetY": 1
         , "rotation": 1
         , "rotationAttr": 'z'
-        //, "rotationStep":  -0.03
+        , "scale": .8
     }
 ];
 
