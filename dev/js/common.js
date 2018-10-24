@@ -5,7 +5,7 @@ window.COMMON_SCRIPT = [
 ];
 
 let host = location.host
-    , port = 9888
+    , port = 9788
     , prefix = `http://${host}:${port}`
     ;
 
