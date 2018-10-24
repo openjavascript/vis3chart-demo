@@ -25,6 +25,7 @@ let background = [
         , "offsetY": 0
         , "rotation": 1
         , "rotationAttr": 'y'
+        , "scaleOffset": -.08
     }
     ,
     { 
@@ -37,7 +38,7 @@ let background = [
         , "offsetY": 1
         , "rotation": 1
         , "rotationAttr": 'z'
-        , "scale": .8
+        , "scaleOffset": -.05
     }
 ];
 
