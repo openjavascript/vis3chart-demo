@@ -12,7 +12,7 @@ function getUserHome() {
 
 module.exports = {
     entry: {
-        'three-def': path.resolve(__dirname, "src/assets/js/three-def.js")
+        'dount': path.resolve(__dirname, "src/assets/js/dount.js")
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
