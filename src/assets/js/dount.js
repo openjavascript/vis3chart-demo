@@ -108,7 +108,6 @@ font.load().then(function () {
         }, 1000 );
     });
 
-/*
     setInterval( ()=>{
         //let data = require( './data/dount-tight8-1.json' );
         let data = require( './data/dount-tight4-1.json' );
@@ -121,10 +120,10 @@ font.load().then(function () {
 
         common.setColor( data );
         //dmins.resize( 500, 500, data );
+        //dmins.update( data, true );
         dmins.update( data );
 
-    }, 2000 );
-*/
+    }, 5000 );
     /*
     setTimeout( ()=>{
         //let data = require( './data/dount-tight8-1.json' );

@@ -4,41 +4,25 @@ import Vis3Chart from 'vis3chart';
 
 import fontfaceobserver from 'fontfaceobserver';
 
-import * as base64img from './data/base64img.js';
-
 import * as common from './common.js';
 
-import svgDountBigAll from './data-3d/svg/dount-big-all.txt';
-import svgDountIn from './data-3d/svg/dount-in.txt';
-import svgDountBig from './data-3d/svg/dount-big.txt';
+import svgRateOut from './data-3d/svg/rate-out.txt';
 
 import * as dat from 'dat.gui';
 
 let background = [
     { 
-        //"url": "./img/dount-in.png"
-        "url":svgDountIn
-        , "issvgstring": true
+        //"url": "./img/rate-out.png"
+        "url": base64img.svgRateOut
+        , "isbase64": true
+        , 'base64prefix': 'data:image/png;base64,'
         , "width": 120
         , "height": 120
-        , "offsetX": 9
-        , "offsetY": 0
-        , "rotation": 1
-        , "rotationAttr": 'y'
-        , "scaleOffset": -.08
-    }
-    ,
-    { 
-        //"url": "./img/dount-big.png"
-        "url": svgDountBig
-        , "issvgstring": true
-        , "width": 250
-        , "height": 248
         , "offsetX": 0
         , "offsetY": 1
         , "rotation": 1
         , "rotationAttr": 'z'
-        , "scaleOffset": -.05
+        , "scaleOffset": 0
     }
 ];
 
