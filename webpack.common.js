@@ -13,6 +13,7 @@ function getUserHome() {
 module.exports = {
     entry: {
         'dount': path.resolve(__dirname, "src/assets/js/dount.js")
+        , 'gauge': path.resolve(__dirname, "src/assets/js/gauge.js")
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
