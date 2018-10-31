@@ -14,15 +14,14 @@ let background = [
     { 
         //"url": "./img/rate-out.png"
         "url": svgRateOut
-        , "isbase64": true
-        , 'base64prefix': 'data:image/png;base64,'
+        , "issvgstring": true
         , "width": 120
         , "height": 120
         , "offsetX": 0
         , "offsetY": 1
         , "rotation": 1
         , "rotationAttr": 'z'
-        , "scaleOffset": 0
+        , "scaleOffset": 0.15
     }
 ];
 
@@ -60,6 +59,7 @@ font.load().then(function () {
         });
     common.setColor( data );
 
+    //console.log( data );
 
     let size = 500;
 
