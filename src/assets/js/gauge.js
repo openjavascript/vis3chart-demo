@@ -13,7 +13,7 @@ import * as dat from 'dat.gui';
 let background = [
     { 
         //"url": "./img/rate-out.png"
-        "url": base64img.svgRateOut
+        "url": svgRateOut
         , "isbase64": true
         , 'base64prefix': 'data:image/png;base64,'
         , "width": 120
@@ -52,13 +52,7 @@ font.load().then(function () {
         camera.add( config.camera.position, 'z' );
 
 
-    //let data = require( './data/dount.json' );
-    //let data = require( './data/dount-tight1.json' );
-    //let data = require( './data/dount-tight2.json' );
-    let data = require( './data/dount-tight4.json' );
-    //let data = require( './data/dount-tight8.json' );
-    //let data = require( './data/dount-real1.json' );
-    //let data = require( './data/dount-disable-animation.json' );
+    let data = require( './data/gauge.json' );
         data 
         && data.series 
         && data.series.map( item => {
@@ -81,7 +75,7 @@ font.load().then(function () {
             }
         });
         dmins.update( data, true ); 
-
+/*
     window.addEventListener( 'resize', ()=>{
 
         window.tmpTimeout && clearTimeout( window.tmpTimeout );
@@ -90,7 +84,7 @@ font.load().then(function () {
             let size = Math.min( window.innerHeight, window.innerWidth ) * .6;
             dmins.resize( size, size );
         }, 1000 );
-    });
+    });*/
 
 /*
     setInterval( ()=>{

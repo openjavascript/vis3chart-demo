@@ -121,7 +121,7 @@ font.load().then(function () {
         common.setColor( data );
         //dmins.resize( 500, 500, data );
         //dmins.update( data, true );
-        dmins.update( data );
+        dmins.update( data, true );
 
     }, 5000 );
     /*
