@@ -110,7 +110,7 @@ font.load().then(function () {
 
     setInterval( ()=>{
         //let data = require( './data/dount-tight8-1.json' );
-        let data = require( './data/dount-tight4-1.json' );
+        let data = require( './data/dount-tight4-2.json' );
         //let data = require( './data/dount-real1.json' );
         data 
         && data.series 
