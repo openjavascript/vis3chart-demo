@@ -108,7 +108,7 @@ font.load().then(function () {
         }, 1000 );
     });
 
-    setInterval( ()=>{
+    /*setInterval( ()=>{
         //let data = require( './data/dount-tight8-1.json' );
         let data = require( './data/dount-tight4-2.json' );
         //let data = require( './data/dount-real1.json' );
@@ -123,7 +123,7 @@ font.load().then(function () {
         //dmins.update( data, true );
         dmins.update( data, true );
 
-    }, 5000 );
+    }, 5000 );*/
     /*
     setTimeout( ()=>{
         //let data = require( './data/dount-tight8-1.json' );
