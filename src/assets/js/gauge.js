@@ -15,8 +15,8 @@ let background = [
         //"url": "./img/rate-out.png"
         "url": svgRateOut
         , "issvgstring": true
-        , "width": 120
-        , "height": 120
+        , "width": 106
+        , "height": 106
         , "offsetX": 0
         , "offsetY": 1
         , "rotation": 1
