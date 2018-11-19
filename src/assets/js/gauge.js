@@ -51,7 +51,15 @@ font.load().then(function () {
         camera.add( config.camera.position, 'z' );
 
 
-    let data = require( './data/gauge.json' );
+    //let data = require( './data/gauge0.json' );
+    //let data = require( './data/gauge.json' );
+    let data = require( './data/gauge1100.json' );
+        data 
+        && data.series 
+        && data.series.map( item => {
+            item.background = background;
+        });
+    common.setColor( data );
         data 
         && data.series 
         && data.series.map( item => {
