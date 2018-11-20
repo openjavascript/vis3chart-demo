@@ -91,7 +91,8 @@ font.load().then(function () {
 
         window.tmpTimeout = setTimeout( ()=>{
             let size = Math.min( window.innerHeight, window.innerWidth ) * .6;
-            dmins.setRedraw( 0 ).resize( size, size );
+            //dmins.setRedraw( 0 ).resize( size, size );
+            dmins.resize( size, size );
         }, 1000 );
     });
 
