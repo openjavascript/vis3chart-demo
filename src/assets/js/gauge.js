@@ -21,7 +21,7 @@ let background = [
         , "offsetY": 1
         , "rotation": 1
         , "rotationAttr": 'z'
-        , "scaleOffset": 0.15
+        , "scaleOffset": .15
     }
 ];
 
@@ -51,9 +51,9 @@ font.load().then(function () {
         camera.add( config.camera.position, 'z' );
 
 
-    //let data = require( './data/gauge0.json' );
+    let data = require( './data/gauge0.json' );
     //let data = require( './data/gauge.json' );
-    let data = require( './data/gauge1100.json' );
+    //let data = require( './data/gauge1100.json' );
     //let data = require( './data/gauge11110000.json' );
         data 
         && data.series 
@@ -84,54 +84,20 @@ font.load().then(function () {
             }
         });
         dmins.update( data, true ); 
-/*
+
     window.addEventListener( 'resize', ()=>{
 
         window.tmpTimeout && clearTimeout( window.tmpTimeout );
 
         window.tmpTimeout = setTimeout( ()=>{
             let size = Math.min( window.innerHeight, window.innerWidth ) * .6;
-            dmins.resize( size, size );
+            dmins.setRedraw( 0 ).resize( size, size );
         }, 1000 );
-    });*/
-
-/*
-    setInterval( ()=>{
-        //let data = require( './data/dount-tight8-1.json' );
-        let data = require( './data/dount-tight4-1.json' );
-        //let data = require( './data/dount-real1.json' );
-        data 
-        && data.series 
-        && data.series.map( item => {
-            item.background = background;
-        });
-
-        common.setColor( data );
-        //dmins.resize( 500, 500, data );
-        dmins.update( data );
-
-    }, 2000 );
-*/
-    /*
-    setTimeout( ()=>{
-        //let data = require( './data/dount-tight8-1.json' );
-        let data = require( './data/dount-tight4-1.json' );
-        //let data = require( './data/dount-real1.json' );
-        data 
-        && data.series 
-        && data.series.map( item => {
-            item.background = background;
-        });
-
-        common.setColor( data );
-        dmins.resize( 500, 500 );
-
-    }, 3000 );
+    });
 
     setTimeout( ()=>{
-        //let data = require( './data/dount-tight8-1.json' );
-        let data = require( './data/dount-tight4-1.json' );
-        //let data = require( './data/dount-real1.json' );
+        let data = require( './data/gauge1100.json' );
+        //let data = require( './data/gauge0.json' );
         data 
         && data.series 
         && data.series.map( item => {
@@ -141,9 +107,7 @@ font.load().then(function () {
         common.setColor( data );
         dmins.update( data, true, 0 ); 
 
-    }, 4000 );*/
-
-
+    }, 3000 * Math.pow( 10, 10 ) );
 
 }, function () {
   console.log('Font is not available');
