@@ -54,6 +54,7 @@ font.load().then(function () {
     //let data = require( './data/gauge0.json' );
     //let data = require( './data/gauge.json' );
     let data = require( './data/gauge1100.json' );
+    //let data = require( './data/gauge11110000.json' );
         data 
         && data.series 
         && data.series.map( item => {
